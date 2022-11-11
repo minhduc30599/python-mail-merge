@@ -18,8 +18,6 @@ with open('./Input/Letters/starting_letter.txt', 'r+') as file:
     letter = file.read()
     for name in new_names:
         new_letter = letter.replace('[name]', name)
-        print(new_letter)
         with open(f'./Output/ReadyToSend/letter_for_{name}', 'w') as f:
             f.write(new_letter)
-
 
